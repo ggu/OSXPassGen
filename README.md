@@ -2,19 +2,26 @@
 A password generator for OS X that resides in the menu bar.
 
 # The Code
-- AppDelegate.swift: manages the popover and status button
+- AppDelegate.swift: manages the popover and status button in the menubar
 
-- PassGenViewController.swift: holds the references to the UI. 
+- PassGenViewController.swift: holds the references to the UI
 
 - PassGenViewController.xib: the popover menu
 
 - Password.swift: the struct holding the logic for generating passwords
 
-- Constants.swift: holds static utility functions and constants
+- Constants.swift: holds constant values (currently just strings, like tooltip)
 
-# Demo
+- Utility.swift: holds static helper functions
 
+# Screenshots
+![Image of Sample1]
+(https://github.com/ggu/OSXPassGen/blob/master/sample1.png)
 
-# To do
-- improve the password generation algorithm
-- improve the popover UI
+![Image of Sample2]
+(https://github.com/ggu/OSXPassGen/blob/master/sample2.png)
+
+# To Do
+- improve the password generation algorithm (incorporate a dictionary? make the passwords less easily brute forceable)
+- improve the popover UI (fonts? colors?)
+- add settings button to manage advanced settings in a separate window (like remembering characters to remove)
