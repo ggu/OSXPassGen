@@ -12,6 +12,9 @@
 		76FEFBCF1C1BD18C002D5052 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FEFBCD1C1BD18C002D5052 /* MainMenu.xib */; };
 		76FEFBDA1C1BD18C002D5052 /* OSXPassGenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEFBD91C1BD18C002D5052 /* OSXPassGenTests.swift */; };
 		76FEFBE51C1BD18C002D5052 /* OSXPassGenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEFBE41C1BD18C002D5052 /* OSXPassGenUITests.swift */; };
+		76FEFBF41C1BD290002D5052 /* PassGenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEFBF21C1BD290002D5052 /* PassGenViewController.swift */; };
+		76FEFBF51C1BD290002D5052 /* PassGenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FEFBF31C1BD290002D5052 /* PassGenViewController.xib */; };
+		76FEFBF71C1BD2FA002D5052 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEFBF61C1BD2FA002D5052 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		76FEFBE01C1BD18C002D5052 /* OSXPassGenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSXPassGenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FEFBE41C1BD18C002D5052 /* OSXPassGenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSXPassGenUITests.swift; sourceTree = "<group>"; };
 		76FEFBE61C1BD18C002D5052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FEFBF21C1BD290002D5052 /* PassGenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassGenViewController.swift; sourceTree = "<group>"; };
+		76FEFBF31C1BD290002D5052 /* PassGenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PassGenViewController.xib; sourceTree = "<group>"; };
+		76FEFBF61C1BD2FA002D5052 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				76FEFBC91C1BD18C002D5052 /* AppDelegate.swift */,
+				76FEFBF21C1BD290002D5052 /* PassGenViewController.swift */,
+				76FEFBF31C1BD290002D5052 /* PassGenViewController.xib */,
+				76FEFBF61C1BD2FA002D5052 /* Constants.swift */,
 				76FEFBCB1C1BD18C002D5052 /* Assets.xcassets */,
 				76FEFBCD1C1BD18C002D5052 /* MainMenu.xib */,
 				76FEFBD01C1BD18C002D5052 /* Info.plist */,
@@ -225,6 +234,7 @@
 			files = (
 				76FEFBCC1C1BD18C002D5052 /* Assets.xcassets in Resources */,
 				76FEFBCF1C1BD18C002D5052 /* MainMenu.xib in Resources */,
+				76FEFBF51C1BD290002D5052 /* PassGenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FEFBF41C1BD290002D5052 /* PassGenViewController.swift in Sources */,
 				76FEFBCA1C1BD18C002D5052 /* AppDelegate.swift in Sources */,
+				76FEFBF71C1BD2FA002D5052 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
