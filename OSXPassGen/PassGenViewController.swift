@@ -10,9 +10,15 @@ import Cocoa
 
 class PassGenViewController: NSViewController {
 
+  @IBOutlet weak var lengthTextField: NSTextField!
+  @IBOutlet weak var charsToExcludeTextField: NSTextField!
+  @IBOutlet weak var passwordScrollView: NSScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+      //let appearance = NSUserDefaults.standardUserDefaults().stringForKey("AppleInterfaceStyle")
     }
     
+  @IBAction func goButtonAction(sender: AnyObject) {
+  }
 }
