@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76FEFBCA1C1BD18C002D5052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEFBC91C1BD18C002D5052 /* AppDelegate.swift */; };
+		76FEFBCC1C1BD18C002D5052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FEFBCB1C1BD18C002D5052 /* Assets.xcassets */; };
+		76FEFBCF1C1BD18C002D5052 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FEFBCD1C1BD18C002D5052 /* MainMenu.xib */; };
+		76FEFBDA1C1BD18C002D5052 /* OSXPassGenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEFBD91C1BD18C002D5052 /* OSXPassGenTests.swift */; };
+		76FEFBE51C1BD18C002D5052 /* OSXPassGenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEFBE41C1BD18C002D5052 /* OSXPassGenUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76FEFBD61C1BD18C002D5052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76FEFBBE1C1BD18C002D5052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76FEFBC51C1BD18C002D5052;
+			remoteInfo = OSXPassGen;
+		};
+		76FEFBE11C1BD18C002D5052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76FEFBBE1C1BD18C002D5052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76FEFBC51C1BD18C002D5052;
+			remoteInfo = OSXPassGen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76FEFBC61C1BD18C002D5052 /* OSXPassGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSXPassGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76FEFBC91C1BD18C002D5052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76FEFBCB1C1BD18C002D5052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76FEFBCE1C1BD18C002D5052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		76FEFBD01C1BD18C002D5052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FEFBD51C1BD18C002D5052 /* OSXPassGenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSXPassGenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76FEFBD91C1BD18C002D5052 /* OSXPassGenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSXPassGenTests.swift; sourceTree = "<group>"; };
+		76FEFBDB1C1BD18C002D5052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FEFBE01C1BD18C002D5052 /* OSXPassGenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSXPassGenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76FEFBE41C1BD18C002D5052 /* OSXPassGenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSXPassGenUITests.swift; sourceTree = "<group>"; };
+		76FEFBE61C1BD18C002D5052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76FEFBC31C1BD18C002D5052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76FEFBD21C1BD18C002D5052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76FEFBDD1C1BD18C002D5052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76FEFBBD1C1BD18C002D5052 = {
+			isa = PBXGroup;
+			children = (
+				76FEFBC81C1BD18C002D5052 /* OSXPassGen */,
+				76FEFBD81C1BD18C002D5052 /* OSXPassGenTests */,
+				76FEFBE31C1BD18C002D5052 /* OSXPassGenUITests */,
+				76FEFBC71C1BD18C002D5052 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76FEFBC71C1BD18C002D5052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76FEFBC61C1BD18C002D5052 /* OSXPassGen.app */,
+				76FEFBD51C1BD18C002D5052 /* OSXPassGenTests.xctest */,
+				76FEFBE01C1BD18C002D5052 /* OSXPassGenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76FEFBC81C1BD18C002D5052 /* OSXPassGen */ = {
+			isa = PBXGroup;
+			children = (
+				76FEFBC91C1BD18C002D5052 /* AppDelegate.swift */,
+				76FEFBCB1C1BD18C002D5052 /* Assets.xcassets */,
+				76FEFBCD1C1BD18C002D5052 /* MainMenu.xib */,
+				76FEFBD01C1BD18C002D5052 /* Info.plist */,
+			);
+			path = OSXPassGen;
+			sourceTree = "<group>";
+		};
+		76FEFBD81C1BD18C002D5052 /* OSXPassGenTests */ = {
+			isa = PBXGroup;
+			children = (
+				76FEFBD91C1BD18C002D5052 /* OSXPassGenTests.swift */,
+				76FEFBDB1C1BD18C002D5052 /* Info.plist */,
+			);
+			path = OSXPassGenTests;
+			sourceTree = "<group>";
+		};
+		76FEFBE31C1BD18C002D5052 /* OSXPassGenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76FEFBE41C1BD18C002D5052 /* OSXPassGenUITests.swift */,
+				76FEFBE61C1BD18C002D5052 /* Info.plist */,
+			);
+			path = OSXPassGenUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76FEFBC51C1BD18C002D5052 /* OSXPassGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76FEFBE91C1BD18C002D5052 /* Build configuration list for PBXNativeTarget "OSXPassGen" */;
+			buildPhases = (
+				76FEFBC21C1BD18C002D5052 /* Sources */,
+				76FEFBC31C1BD18C002D5052 /* Frameworks */,
+				76FEFBC41C1BD18C002D5052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSXPassGen;
+			productName = OSXPassGen;
+			productReference = 76FEFBC61C1BD18C002D5052 /* OSXPassGen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76FEFBD41C1BD18C002D5052 /* OSXPassGenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76FEFBEC1C1BD18C002D5052 /* Build configuration list for PBXNativeTarget "OSXPassGenTests" */;
+			buildPhases = (
+				76FEFBD11C1BD18C002D5052 /* Sources */,
+				76FEFBD21C1BD18C002D5052 /* Frameworks */,
+				76FEFBD31C1BD18C002D5052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76FEFBD71C1BD18C002D5052 /* PBXTargetDependency */,
+			);
+			name = OSXPassGenTests;
+			productName = OSXPassGenTests;
+			productReference = 76FEFBD51C1BD18C002D5052 /* OSXPassGenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76FEFBDF1C1BD18C002D5052 /* OSXPassGenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76FEFBEF1C1BD18C002D5052 /* Build configuration list for PBXNativeTarget "OSXPassGenUITests" */;
+			buildPhases = (
+				76FEFBDC1C1BD18C002D5052 /* Sources */,
+				76FEFBDD1C1BD18C002D5052 /* Frameworks */,
+				76FEFBDE1C1BD18C002D5052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76FEFBE21C1BD18C002D5052 /* PBXTargetDependency */,
+			);
+			name = OSXPassGenUITests;
+			productName = OSXPassGenUITests;
+			productReference = 76FEFBE01C1BD18C002D5052 /* OSXPassGenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76FEFBBE1C1BD18C002D5052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Gabriel Uribe";
+				TargetAttributes = {
+					76FEFBC51C1BD18C002D5052 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					76FEFBD41C1BD18C002D5052 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 76FEFBC51C1BD18C002D5052;
+					};
+					76FEFBDF1C1BD18C002D5052 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 76FEFBC51C1BD18C002D5052;
+					};
+				};
+			};
+			buildConfigurationList = 76FEFBC11C1BD18C002D5052 /* Build configuration list for PBXProject "OSXPassGen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76FEFBBD1C1BD18C002D5052;
+			productRefGroup = 76FEFBC71C1BD18C002D5052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76FEFBC51C1BD18C002D5052 /* OSXPassGen */,
+				76FEFBD41C1BD18C002D5052 /* OSXPassGenTests */,
+				76FEFBDF1C1BD18C002D5052 /* OSXPassGenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76FEFBC41C1BD18C002D5052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FEFBCC1C1BD18C002D5052 /* Assets.xcassets in Resources */,
+				76FEFBCF1C1BD18C002D5052 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76FEFBD31C1BD18C002D5052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76FEFBDE1C1BD18C002D5052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76FEFBC21C1BD18C002D5052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FEFBCA1C1BD18C002D5052 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76FEFBD11C1BD18C002D5052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FEFBDA1C1BD18C002D5052 /* OSXPassGenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76FEFBDC1C1BD18C002D5052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FEFBE51C1BD18C002D5052 /* OSXPassGenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76FEFBD71C1BD18C002D5052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76FEFBC51C1BD18C002D5052 /* OSXPassGen */;
+			targetProxy = 76FEFBD61C1BD18C002D5052 /* PBXContainerItemProxy */;
+		};
+		76FEFBE21C1BD18C002D5052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76FEFBC51C1BD18C002D5052 /* OSXPassGen */;
+			targetProxy = 76FEFBE11C1BD18C002D5052 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76FEFBCD1C1BD18C002D5052 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76FEFBCE1C1BD18C002D5052 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76FEFBE71C1BD18C002D5052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76FEFBE81C1BD18C002D5052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		76FEFBEA1C1BD18C002D5052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXPassGen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.OSXPassGen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		76FEFBEB1C1BD18C002D5052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXPassGen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.OSXPassGen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		76FEFBED1C1BD18C002D5052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXPassGenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.OSXPassGenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSXPassGen.app/Contents/MacOS/OSXPassGen";
+			};
+			name = Debug;
+		};
+		76FEFBEE1C1BD18C002D5052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXPassGenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.OSXPassGenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSXPassGen.app/Contents/MacOS/OSXPassGen";
+			};
+			name = Release;
+		};
+		76FEFBF01C1BD18C002D5052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXPassGenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.OSXPassGenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OSXPassGen;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		76FEFBF11C1BD18C002D5052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXPassGenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.OSXPassGenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OSXPassGen;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76FEFBC11C1BD18C002D5052 /* Build configuration list for PBXProject "OSXPassGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76FEFBE71C1BD18C002D5052 /* Debug */,
+				76FEFBE81C1BD18C002D5052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76FEFBE91C1BD18C002D5052 /* Build configuration list for PBXNativeTarget "OSXPassGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76FEFBEA1C1BD18C002D5052 /* Debug */,
+				76FEFBEB1C1BD18C002D5052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76FEFBEC1C1BD18C002D5052 /* Build configuration list for PBXNativeTarget "OSXPassGenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76FEFBED1C1BD18C002D5052 /* Debug */,
+				76FEFBEE1C1BD18C002D5052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76FEFBEF1C1BD18C002D5052 /* Build configuration list for PBXNativeTarget "OSXPassGenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76FEFBF01C1BD18C002D5052 /* Debug */,
+				76FEFBF11C1BD18C002D5052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76FEFBBE1C1BD18C002D5052 /* Project object */;
+}
