@@ -22,6 +22,7 @@ A password generator for OS X that resides in the menu bar.
 (https://github.com/ggu/OSXPassGen/blob/master/sample2.png)
 
 # To Do
+- add 'quit' button
 - improve the password generation algorithm (incorporate a dictionary? make the passwords less easily brute forceable)
 - improve the popover UI (fonts? colors?)
 - add settings button to manage advanced settings in a separate window (like remembering characters to remove)
