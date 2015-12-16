@@ -2,7 +2,7 @@
 A password generator for OS X that resides in the menu bar.
 
 # The Code
-- AppDelegate.swift: manages the popover and status button in the menubar
+- AppDelegate.swift: manages the popover view controller (PassGenViewController and status button in the menubar
 
 - PassGenViewController.swift: holds the references to the UI
 
