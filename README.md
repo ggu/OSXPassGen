@@ -27,4 +27,4 @@ A password generator for OS X that resides in the menu bar.
 - improve the popover UI (fonts? colors?)
 - add settings button to manage advanced settings in a separate window (like remembering characters to remove)*
 
-* or make it so that whenever an input is provided in one of the fields, that data gets saved locally as a preference so that whenever PassGen is opened, the fields are filled in with the information from the last time a password was generated. However, a settings page where you can define custom password generation algorithms to use that can then be selected from a dropdown in the main popover might be a neat idea too
+\* or make it so that whenever an input is provided in one of the fields, that data gets saved locally as a preference so that whenever PassGen is opened, the fields are filled in with the information from the last time a password was generated. However, a settings page where you can define custom password generation algorithms to use that can then be selected from a dropdown in the main popover might be a neat idea too
