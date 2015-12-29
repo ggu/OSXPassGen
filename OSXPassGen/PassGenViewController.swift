@@ -3,24 +3,24 @@
 //  OSXPassGen
 //
 //  Created by Gabriel Uribe on 12/11/15.
-//  Copyright © 2015 Gabriel Uribe. All rights reserved.
 //
 
 import Cocoa
 
-class PassGenViewController: NSViewController {
-
+class PassGenViewController: NSViewController
+{
   @IBOutlet weak var lengthTextField: NSTextField!
   @IBOutlet weak var charsToExcludeTextField: NSTextField!
   @IBOutlet weak var passwordScrollView: NSScrollView!
   @IBOutlet weak var passwordLabel: NSTextField!
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      // to check if Dark Mode is enabled. May use this to improve UX
-      //let appearance = NSUserDefaults.standardUserDefaults().stringForKey("AppleInterfaceStyle")
-    }
-    
+  override func viewDidLoad()
+  {
+    super.viewDidLoad()
+    // to check if Dark Mode is enabled. May use this to improve UX
+    //let appearance = NSUserDefaults.standardUserDefaults().stringForKey("AppleInterfaceStyle")
+  }
+  
   @IBAction func goButtonAction(sender: AnyObject)
   {
     let password = Password.generate(lengthTextField.integerValue, toExclude: charsToExcludeTextField.stringValue)
