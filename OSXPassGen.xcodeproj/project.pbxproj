@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76DF41A31C3E0E5B00807404 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF41A21C3E0E5B00807404 /* EventMonitor.swift */; };
 		76FEFBCA1C1BD18C002D5052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FEFBC91C1BD18C002D5052 /* AppDelegate.swift */; };
 		76FEFBCC1C1BD18C002D5052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FEFBCB1C1BD18C002D5052 /* Assets.xcassets */; };
 		76FEFBCF1C1BD18C002D5052 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FEFBCD1C1BD18C002D5052 /* MainMenu.xib */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76DF41A21C3E0E5B00807404 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		76FEFBC61C1BD18C002D5052 /* OSXPassGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSXPassGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FEFBC91C1BD18C002D5052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76FEFBCB1C1BD18C002D5052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				76FEFBF31C1BD290002D5052 /* PassGenViewController.xib */,
 				76FEFBF81C1C01FA002D5052 /* Password.swift */,
 				76FEFBFA1C1C1AFD002D5052 /* Utility.swift */,
+				76DF41A21C3E0E5B00807404 /* EventMonitor.swift */,
 				76FEFBF61C1BD2FA002D5052 /* Constants.swift */,
 				76FEFBCB1C1BD18C002D5052 /* Assets.xcassets */,
 				76FEFBCD1C1BD18C002D5052 /* MainMenu.xib */,
@@ -268,6 +271,7 @@
 				76FEFBFB1C1C1AFD002D5052 /* Utility.swift in Sources */,
 				76FEFBF91C1C01FA002D5052 /* Password.swift in Sources */,
 				76FEFBF41C1BD290002D5052 /* PassGenViewController.swift in Sources */,
+				76DF41A31C3E0E5B00807404 /* EventMonitor.swift in Sources */,
 				76FEFBCA1C1BD18C002D5052 /* AppDelegate.swift in Sources */,
 				76FEFBF71C1BD2FA002D5052 /* Constants.swift in Sources */,
 			);
@@ -491,6 +495,7 @@
 				76FEFBEB1C1BD18C002D5052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76FEFBEC1C1BD18C002D5052 /* Build configuration list for PBXNativeTarget "OSXPassGenTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +504,7 @@
 				76FEFBEE1C1BD18C002D5052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76FEFBEF1C1BD18C002D5052 /* Build configuration list for PBXNativeTarget "OSXPassGenUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +513,7 @@
 				76FEFBF11C1BD18C002D5052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

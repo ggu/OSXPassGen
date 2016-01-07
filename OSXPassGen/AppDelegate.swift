@@ -10,9 +10,10 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate
 {
-  
   @IBOutlet weak var window: NSWindow!
   
+  var eventMonitor: EventMonitor?
+
   let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-2)
   
   let popover = NSPopover()
@@ -22,6 +23,13 @@ class AppDelegate: NSObject, NSApplicationDelegate
     setupStatusButton()
     
     popover.contentViewController = PassGenViewController(nibName: "PassGenViewController", bundle: nil)
+    
+    eventMonitor = EventMonitor(mask: [.LeftMouseDownMask, .RightMouseDownMask]) { [unowned self] event in
+      if self.popover.shown {
+        self.closePopover(event)
+      }
+    }
+    eventMonitor?.start()
   }
   
   func applicationWillTerminate(aNotification: NSNotification)
@@ -58,11 +66,13 @@ class AppDelegate: NSObject, NSApplicationDelegate
     {
       popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSRectEdge.MinY)
     }
+    eventMonitor?.start()
   }
   
   func closePopover(sender: AnyObject?)
   {
     popover.performClose(sender)
+    eventMonitor?.stop()
   }
 }
 
