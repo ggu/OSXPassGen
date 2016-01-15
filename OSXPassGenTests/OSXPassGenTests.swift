@@ -10,6 +10,9 @@ import XCTest
 
 class OSXPassGenTests: XCTestCase
 {
+  static let lowerBound = 33
+  static let upperBound = 126
+  
   override func setUp()
   {
     super.setUp()
@@ -22,10 +25,25 @@ class OSXPassGenTests: XCTestCase
     super.tearDown()
   }
   
-  func testExample()
+  func testPasswordGenerateNoExlude()
   {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    for var i = 0; i < 100; i++
+    {
+      let password = Password.generate(i, toExclude: "")
+      XCTAssert(password.characters.count == i)
+    }
+  }
+  
+  func testCharacterToExclude()
+  {
+    for var i = OSXPassGenTests.lowerBound; i <= OSXPassGenTests.upperBound; i++
+    {
+      let charToExclude = UnicodeScalar(i)
+      let stringToExclude = charToExclude.description
+      print(stringToExclude)
+      let password = Password.generate(10000, toExclude: stringToExclude)
+      XCTAssert(!password.containsString(stringToExclude))
+    }
   }
   
   func testPerformanceExample()
