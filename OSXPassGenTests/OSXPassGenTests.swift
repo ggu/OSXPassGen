@@ -34,7 +34,7 @@ class OSXPassGenTests: XCTestCase
     }
   }
   
-  func testCharacterToExclude()
+  func testPasswordGenerateOneCharToExclude()
   {
     for var i = OSXPassGenTests.lowerBound; i <= OSXPassGenTests.upperBound; i++
     {
