@@ -27,4 +27,8 @@ class PassGenViewController: NSViewController
     passwordLabel.stringValue = password
     passwordLabel.sizeToFit()
   }
+  @IBAction func quitButtonAction(sender: AnyObject)
+  {
+    NSApplication.sharedApplication().terminate(self)
+  }
 }
