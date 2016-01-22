@@ -8,8 +8,7 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate
-{
+class AppDelegate: NSObject, NSApplicationDelegate {
   @IBOutlet weak var window: NSWindow!
   
   var eventMonitor: EventMonitor?
@@ -18,8 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
   
   let popover = NSPopover()
   
-  func applicationDidFinishLaunching(aNotification: NSNotification)
-  {
+  func applicationDidFinishLaunching(aNotification: NSNotification) {
     setupStatusButton()
     
     popover.contentViewController = PassGenViewController(nibName: "PassGenViewController", bundle: nil)
@@ -32,15 +30,13 @@ class AppDelegate: NSObject, NSApplicationDelegate
     eventMonitor?.start()
   }
   
-  func applicationWillTerminate(aNotification: NSNotification)
-  {
+  func applicationWillTerminate(aNotification: NSNotification) {
     
   }
   
   // MARK: Helpers
   
-  func setupStatusButton()
-  {
+  func setupStatusButton() {
     if let button = statusItem.button
     {
       button.title = statusTitle
@@ -49,8 +45,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
     }
   }
   
-  func togglePopover(sender: AnyObject?)
-  {
+  func togglePopover(sender: AnyObject?) {
     if popover.shown
     {
       closePopover(sender)
@@ -60,19 +55,15 @@ class AppDelegate: NSObject, NSApplicationDelegate
     }
   }
   
-  func showPopover(sender: AnyObject?)
-  {
-    if let button = statusItem.button
-    {
+  func showPopover(sender: AnyObject?) {
+    if let button = statusItem.button {
       popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSRectEdge.MinY)
     }
     eventMonitor?.start()
   }
   
-  func closePopover(sender: AnyObject?)
-  {
+  func closePopover(sender: AnyObject?) {
     popover.performClose(sender)
     eventMonitor?.stop()
   }
 }
-
