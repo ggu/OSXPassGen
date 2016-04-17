@@ -9,8 +9,8 @@ import XCTest
 @testable import OSXPassGen
 
 class OSXPassGenTests: XCTestCase {
-  static let lowerBound = 33
-  static let upperBound = 126
+  
+  private static let numIterationsToTest = 100
   
   override func setUp() {
     super.setUp()
@@ -23,14 +23,14 @@ class OSXPassGenTests: XCTestCase {
   }
   
   func testPasswordGenerateNoExlude() {
-    for var i = 0; i < 100; i++ {
+    for i in 0..<OSXPassGenTests.numIterationsToTest {
       let password = Password.generate(i, toExclude: "")
       XCTAssert(password.characters.count == i)
     }
   }
   
   func testPasswordGenerateOneCharToExclude() {
-    for var i = OSXPassGenTests.lowerBound; i <= OSXPassGenTests.upperBound; i++ {
+    for i in 0..<OSXPassGenTests.numIterationsToTest {
       let charToExclude = UnicodeScalar(i)
       let stringToExclude = charToExclude.description
       print(stringToExclude)
