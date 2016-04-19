@@ -8,11 +8,12 @@
 import Foundation
 
 struct Password {
-  static let lowerBound = 33
+  static let lowerBound = 33 // alphanumeric ASCII bounds
   static let upperBound = 126
   
   static func generate(length: Int, toExclude: String) -> String {
-    var charactersToExlude : [UnicodeScalar] = []
+    var charactersToExlude: [UnicodeScalar] = []
+    
     for char in toExclude.unicodeScalars {
       charactersToExlude.append(char)
     }
@@ -20,7 +21,7 @@ struct Password {
     var password = ""
     
     for _ in 0..<length {
-      var passwordCharacter : UnicodeScalar
+      var passwordCharacter: UnicodeScalar
       
       repeat {
         let passwordCharacterInt = Utility.getRandomNumber(lowerBound, max: upperBound)

@@ -9,4 +9,3 @@ import Foundation
 
 let statusToolTip = "Password generator"
 let statusTitle = "P"
-

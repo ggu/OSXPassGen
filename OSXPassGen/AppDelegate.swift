@@ -9,12 +9,11 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+  
   @IBOutlet weak var window: NSWindow!
   
   var eventMonitor: EventMonitor?
-
   let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-2)
-  
   let popover = NSPopover()
   
   func applicationDidFinishLaunching(aNotification: NSNotification) {
@@ -27,6 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.closePopover(event)
       }
     }
+    
     eventMonitor?.start()
   }
   
@@ -37,20 +37,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   // MARK: Helpers
   
   func setupStatusButton() {
-    if let button = statusItem.button
-    {
+    if let button = statusItem.button {
       button.title = statusTitle
       button.toolTip = statusToolTip
-      button.action = Selector("togglePopover:")
+      button.action = #selector(AppDelegate.togglePopover(_:))
     }
   }
   
   func togglePopover(sender: AnyObject?) {
-    if popover.shown
-    {
+    if popover.shown {
       closePopover(sender)
-    } else
-    {
+    } else {
       showPopover(sender)
     }
   }
@@ -59,6 +56,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     if let button = statusItem.button {
       popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSRectEdge.MinY)
     }
+    
     eventMonitor?.start()
   }
   
