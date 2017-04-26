@@ -15,11 +15,9 @@ A password generator for OS X that resides in the menu bar.
 - Utility.swift: holds static helper functions
 
 # Screenshots
-![Image of Sample1]
-(https://github.com/ggu/OSXPassGen/blob/master/sample1.png)
+<img src="https://github.com/ggu/OSXPassGen/blob/master/sample1.png"/>
 
-![Image of Sample2]
-(https://github.com/ggu/OSXPassGen/blob/master/sample2.png)
+<img src="https://github.com/ggu/OSXPassGen/blob/master/sample2.png"/>
 
 # To Do
 - improve the password generation algorithm (incorporate a dictionary? make the passwords less easily brute forceable)
