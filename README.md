@@ -1,5 +1,5 @@
 # OSXPassGen
-A password generator for OS X that resides in the menu bar. This was not made for serious use, instead as a learning tool for macOS development.
+A password generator for macOS that resides in the menu bar. <b>This was not made for serious use, but for learning macOS development.</b>
 
 # The Code
 - AppDelegate.swift: manages the popover view controller (PassGenViewController) and status button in the menubar
